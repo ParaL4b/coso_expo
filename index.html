@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Express yourself</ion-title>
+                <ion-label slot="end" id="avatar">Cerrar Sesion</ion-label>
+            </ion-toolbar>
+            
+        </ion-header>
+
+        <ion-content>
+            <ion-grid>
+
+                <ion-row>
+                    <ion-col>
+                        <ion-card class="logo">
+                            <p class="Title-comment"><img src="./images/logo.png" width="150px" alt=""></p>
+                            <ion-card-content>
+                                   
+                            </ion-card-content>
+                        </ion-card> 
+                    </ion-col>
+                </ion-row>
+
+
+                <ion-row>
+                    <ion-col>
+                        <ion-card style="margin-top: 15px;">
+                            <ion-card-head>
+                                <ion-card-title class="Title-comment">Nuevo Comentario</ion-card-title>
+                            </ion-card-head>
+                            <ion-card-content>
+                                <ion-label>
+                                    Escribe un comentario de la escuela CBTis N.79
+                                </ion-label>
+                                <ion-list>
+                                    <ion-item>
+                                        <ion-textarea id="ComentarioInput" label="Escribe tu Comentario"  label-placement="floating" placeholder="Enter comment"></ion-textarea>
+                                        <ion-label slot="end">
+                                            <ion-button id="EnviarComment"><ion-icon name="send"></ion-icon></ion-button>
+                                        </ion-label>
+                                    </ion-item>
+                                </ion-list>
+                                
+                            </ion-card-content>
+                        </ion-card> 
+                    </ion-col>
+                </ion-row>
+            
+                <div><h2>Comentarios</h2></div>
+                <div id="Comentarios"></div>
+                
+
+            </ion-grid>
+        </ion-content>
+
+    </ion-app>
+   	<!-- Ionic -->
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+	<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+	<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
