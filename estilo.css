@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/marmol.1.png);
+        background-position: center bottom;
+        background-repeat:no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 700;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+    
+}
+
+.menu label{
+    cursor:pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 70px;
+    line-height: 80px;
+    color:#F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn1{
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #bbbbbb;
+    color: #222222;
+    text-transform:uppercase ;
+}
+
+.btn1:hover{
+    background-color: #c9c7c7;
+}
+.Title-comment{
+    text-align: center;
+}
+ion-avatar{
+    width: 30px;
+    height: 30px;
+}
+
+ion-card{
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.logo{
+    border-radius: 0%;
+}
+ion-card-subtitle{
+    color: #1d4370;
+}
